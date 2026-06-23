@@ -110,6 +110,19 @@ class Beam:
             screen.blit(self.img, self.rct)    
 
 
+class Explotion:
+    def __init__(self, rct: pg.Rect):
+        self.lst = []
+        self.img = pg.image.load(f"fig/explotion.gif")
+        self.lst.append(self.img)
+        self.rct = self.img.get_rect()
+        self.rct.center = rct
+        self.life = 
+
+    def update(self):
+        self.life
+
+
 class Bomb:
     """
     爆弾に関するクラス
